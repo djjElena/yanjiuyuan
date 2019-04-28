@@ -1,0 +1,166 @@
+<div class="heads">
+    <!--头部-->
+    <div class="tou-ph">
+        <div class="iconBack-title">
+            <a class="m_logo" href="#"><img src="./images/index/logo.png"></a>
+        </div>
+        <a class="anniu" href="javascript:;"><div class="menu2"></div></a>
+        <ul class="navlist_mo">
+            <li>
+                <a href="#">首页</a>
+            </li>
+            <li class="mo">
+                <a>研究院简介</a>
+                <ul class="abm_nav">
+                    <li>
+                        <a href="#">院长致辞</a>
+                    </li>
+                    <li>
+                        <a href="#">院长致辞</a>
+                    </li>
+                    <li>
+                        <a href="#">院长致辞</a>
+                    </li>
+                    <li>
+                        <a href="#">院长致辞</a>
+                    </li>
+                    <li>
+                        <a href="#">院长致辞</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mo">
+                <a>研究院团队</a>
+                <ul class="abm_nav">
+                    <li>
+                        <a href="#">专职研究员</a>
+                    </li>
+                    <li>
+                        <a href="#">专职研究员</a>
+                    </li>
+                    <li>
+                        <a href="#">专职研究员</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mo">
+                <a>学术成果</a>
+                <ul class="abm_nav">
+                    <li>
+                        <a href="#">课题报告</a>
+                    </li>
+                    <li>
+                        <a href="#">论文发表</a>
+                    </li>
+                    <li>
+                        <a href="#">出版物</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mo">
+                <a>社会影响</a>
+            </li>
+        </ul>
+    </div>
+    <div class="h-nav">
+        <div class="inner">
+            <!--导航-->
+            <div class="h-list">
+                <div class="head_logo lf">
+                    <a href="#" class="aa"><img src="images/index/logo.png" alt=""/></a>
+                </div>
+                <ul>
+                    <li class="active"><a href="#">首页 <br/></a>  </li>
+                    <li><a href="javascript:;">研究院简介<br/></a>
+                        <div class="xl-s">
+                            <ul class="xl-list">
+                                <li>
+                                    <a href="#">院长致辞</a>
+                                </li>
+                                <li>
+                                    <a href="#">院长致辞</a>
+                                </li>
+                                <li>
+                                    <a href="#">院长致辞</a>
+                                </li>
+                                <li>
+                                    <a href="#">院长致辞</a>
+                                </li>
+                                <li>
+                                    <a href="#">院长致辞</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="javascript:;">研究院团队 <br/></a>
+                        <div class="xl-s">
+                            <ul class="xl-list">
+                                <li>
+                                    <a href="#">专职研究员</a>
+                                </li>
+                                <li>
+                                    <a href="#">专职研究员</a>
+                                </li>
+                                <li>
+                                    <a href="#">专职研究员</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="javascript:;">学术成果<br/></a>
+                        <div class="xl-s">
+                            <ul class="xl-list">
+                                <li>
+                                    <a href="#">课题报告</a>
+                                </li>
+                                <li>
+                                    <a href="#">论文发表</a>
+                                </li>
+                                <li>
+                                    <a href="#">出版物</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="javascript:;">社会影响<br/></a>
+                    </li>
+                    <li><a href="javascript:;">中文 | English<br/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            /*导航下拉效果*/
+            $('.h-list ul>li').on('mouseenter',function(){
+                $(this).children('div').slideDown(200);
+            }).on('mouseleave',function(){
+                $(this).children('div').slideUp(200);
+            });
+            //点击切换导航栏按钮  手机端
+            $('.tou-ph').on('click','.anniu',function(){
+                if($(this).attr('class')!='anniu active'){
+                    $(this).addClass('active');
+                    $('body').css('right','50%');
+                    $('.navlist_mo').css('right','0');
+                }else{
+                    $(this).removeClass('active');
+                    $('body').css('right','0');
+                    $('.navlist_mo').css('right','-50%');
+                }
+            });
+            //侧边栏点击切换效果  手机端
+            $('.navlist_mo').on('click','.mo>a',function(){
+                if($(this).parent().attr('class')!='mo active'){
+                    $(this).parent().addClass('active');
+                    $(this).parent().siblings().removeClass('active');
+                }else{
+                    $(this).parent().removeClass('active');
+                }
+            });
+
+        })
+    </script>
+</div>

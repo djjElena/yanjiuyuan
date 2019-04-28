@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="gb2312">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=dege"/>
+    <meta name="format-detection" content="telephone=no" />
+    <title>院长致辞</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/headfoot.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/second.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/laydate/laydate.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--头部部分-->
+<!--页尾-->
+<div class="ding">
+    <div class="head">
+        <script>$(".head").load("head.html");</script>
+    </div>
+    <!--banner-->
+    <div class="beijing">
+        <div>
+            <img src="images/index/beijing.png" alt=""/>
+        </div>
+        <div>
+            <img src="images/index/ktyj.png" alt=""/>
+            <div class="lanxian"></div>
+        </div>
+        <div class="title">
+            <span>课题研究&nbsp;>&nbsp;</span><u><a href="#">所有课题</a></u>
+        </div>
+    </div>
+
+</div>
+
+<!-- 二级页面左边 -->
+<div class="huise">
+    <div class="main-md">
+        <div class="padd50">
+            <div class="fu_cont">
+                <!-- 二级页面左边-->
+                <div class="fu_lf wow bounceInLeft">
+                    <div class="fu_lf_cont">
+                        <ul>
+                            <li class="active"><a href="#"> 课题报告 </a></li>
+                            <li><a href="#"> 论文发表 </a></li>
+                            <li><a href="#"> 出版物 </a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- 二级页面右边-->
+                <div class="fu_rt wow  bounceInRight jieshao">
+                    <h1>院长致辞</h1>
+                    <div class="nr-content">
+                        <p>
+                            内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待
+                            上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传
+                        </p>
+                        <p>
+                            内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待
+                            上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传
+                        </p>
+                        <p>
+                            内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待
+                            上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传 内容待上传
+                        </p>
+
+
+                    </div>
+                </div>
+                <div class="both"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--页尾-->
+<div class="foots">
+    <script>$(".foots").load("foot.html");</script>
+</div>
+<script>
+    laydate.render({
+        elem: '#date1', //指定元素
+        type:'month'
+    });
+    laydate.render({
+        elem: '#date2', //指定元素
+        type:'month'
+    });
+</script>
+<script>
+    $(function(){
+        var banner = new Swiper('#banner', {
+            /*autoplay: 5000,*/
+            simulateTouch : true,
+            speed:1000,
+            //effect : "fade",
+            fade: {
+                crossFade: true
+            },
+            loop: true,
+            lazyLoading: true,
+//            pagination: '.swiper-pagination',
+//            prevButton:'.swiper-button-prev',
+//            nextButton:'.swiper-button-next',
+            paginationClickable: true
+        });
+        /**/
+        /*首页浮动效果函数*/
+        function fdxg(div,offset,time){
+            var oTop, sTop, dHeight, wHeight;
+            oTop = $(div).offset().top;//元素相对于窗口的距离
+            sTop = $(window).scrollTop(); //监控窗口已滚动的距离;
+            dHeight = $(document).height();//整个文档的高度
+            wHeight = $(window).height();//浏览器窗口的高度
+            if (wHeight + sTop > oTop + offset) {
+                setTimeout(function(){
+                    $(div).animate({ marginTop: 0 }, 1000);
+                },time)
+            }
+        }
+        $(window).on("scroll",function(){
+            fdxg('.yf h1',100,0);
+            fdxg('.pro h1',100,0);
+            fdxg('.ys h1',100,0);
+            fdxg('.jm h1',100,0);
+            fdxg('.al h1',100,0);
+            fdxg('.mc h1',100,0);
+            fdxg('.cn_in',100,0);
+            fdxg('.cn_txt',100,0);
+            fdxg('.pro .pro-con',100,0);
+            fdxg('.mc .pro-con',100,0);
+            fdxg('.pro .pro-bg',100,0);
+            fdxg('.mc .pro-bg',100,0);
+            fdxg('.ys-im',100,0);
+            fdxg('.ys-txt',100,0);
+            fdxg('.jm-txt',100,0);
+            fdxg('.zc-tit',100,0);
+            fdxg('.zc-ls ul li',100,0);
+            fdxg('.zc-bot',100,0);
+            fdxg('.sd-tit',100,0);
+            fdxg('.sd-ls',100,0);
+            fdxg('.al-con',100,0);
+            fdxg('#b-al',100,0);
+        });
+    });
+
+</script>
+</body>
+</html>

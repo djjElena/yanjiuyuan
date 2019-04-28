@@ -1,0 +1,447 @@
+@charset "UTF-8";
+/*页码*/
+.mypage {
+    width:100%;
+    height:auto;
+    border:#f00 0px solid;
+    margin:0 auto;
+    padding: 20px 0;
+    text-align:center;
+    font-size: 16px;
+}
+.pc_dis{
+    display: none;
+}
+.mypage a{
+    color:#4d555d;
+    width:auto;
+    height:auto;
+    padding:6px 12px;
+    font-size:16px;
+    margin-right:5px;
+    border: 1px solid #DBDBDB;
+    background: #F5F5F5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.mypage span{
+    color:#717171;
+    width:auto;
+    height:auto;
+    padding:10px;
+    font-size:16px;
+    border-radius:5px;
+    margin-right:5px;
+}
+.mypage .linking,.mypage a:hover {
+    color: #fff;
+    background: #9F2623;
+    border:1px solid transparent;
+    border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+    .pc_dis {
+        display: block;
+    }
+    .ph_dis {
+        display: none;
+    }
+
+    .mypage {
+        padding: 15px 0;
+    }
+}
+/**/
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+    .inner{
+        width: 1024px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .inner{
+        width: 100%;
+    }
+}
+/* 二级页面的banner */
+.fu_banner{
+    width: 100%;
+    height: 400px;
+    max-width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    animation: animatedBackground 20s linear infinite alternate;
+    -o-animation: animatedBackground 20s linear infinite alternate;
+    -webkit-animation: animatedBackground 20s linear infinite alternate;
+    -moz-animation: animatedBackground 20s linear infinite alternate;
+}
+/*动画*/
+@keyframes animatedBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50% 0;
+    }
+}
+.zoubg{
+    background-image: url("../images/second/fu.jpg");
+}
+.padd50{
+    padding: 50px 0;
+}
+.fu_lf{
+    float: left;
+    width: 200px;
+    clear: both;
+}
+.fu_rt{
+    margin-left: 240px;
+}
+.fu_lf_cont{
+    background-color: #BF3130;
+    margin-bottom: 20px;
+}
+.main-md{
+    width: 1200px;
+    margin: 0 auto;
+}
+.lf_tit{
+    text-align: center;
+}
+.lf_tit{
+    text-align: center;
+    padding:5px 15px;
+}
+.lf_tit h4{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.lf_tit h6{
+    font-size: 14px;
+    color: #FDF0CA;
+}
+.fu_lf_cont{
+    padding:5px;
+}
+.fu_lf_cont ul li{
+   background-color: #FEE8C4;
+    margin-bottom: 2px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+}
+.fu_lf_cont ul li a{
+    font-family: "宋体";
+    font-size: 14px;
+    color: #333333;
+    font-weight: bold;
+}
+.fu_lf_cont ul li.active a{
+    color: #BF3130;
+}
+.fu_lf_text{
+    background-color: #FEE8C4;
+    padding: 5px;
+}
+.fu_lf_text p{
+    font-size: 14px;
+    font-family: "宋体";
+    color: #333333;
+    line-height: 30px;
+}
+.title{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #BFBFBF;
+}
+.title span{
+    font-size: 12px;
+    color: #474F55;
+    font-family: "宋体";
+}
+@media screen and (max-width: 1200px) {
+    .main-md{
+        width: 1024px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .main-md{
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .zoubg{
+        height: 300px;
+        background-image: url("../images/second/phfu.jpg");
+    }
+    .fu_lf{
+       display:none;
+    }
+    .fu_rt{
+        margin-left:0;
+    }
+    .padd50{
+        padding: 30px 0;
+    }
+}
+/*
+    产品中心
+*/
+.row,.container{
+    margin: 0;
+}
+.pro-con ul{
+    overflow: hidden;
+}
+.pro-con ul li{
+    float: left;
+    width: 33.3%;
+    padding: 15px 8px;
+}
+.pro-con ul li a{
+    display: block;
+}
+.pro-con ul li .im{
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #eeeeee;
+    padding: 8px;
+    margin-bottom: 10px;
+    transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+}
+.pro-con ul li .im img{
+    width: 100%;
+}
+.pro-con ul li p{
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+    line-height: 24px;
+    transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+    height: 24px;
+    overflow: hidden;
+}
+/*案例中心*/
+.zs-con ul{
+    overflow: hidden;
+}
+.zs-con ul li{
+    float: left;
+    width: 50%;
+    padding: 15px 8px;
+}
+.zs-con ul li a{
+    display: block;
+    border: 1px solid #eeeeee;
+    padding: 8px;
+    transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+}
+.zs-con ul li .im{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.zs-con ul li .im img{
+    width: 100%;
+}
+.zs-con ul li p{
+    font-size: 16px;
+    color: #3e3c3c;
+    line-height: 28px;
+    transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+    height: 28px;
+    overflow: hidden;
+}
+.zs-con ul li span{
+    color: #818181;
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    height: 24px;
+}
+/*产品详情*/
+.cpxq{
+    padding: 0 0 10px 0;
+    display: block;
+    border-bottom: 1px solid #c9c9c9;
+}
+.cpxq-tit{
+}
+.cpxq-tit h3{
+    font-size: 18px;
+    line-height: 32px;
+    padding-bottom: 10px;
+    color: #474f55;
+    border-bottom: 1px solid #c9c9c9;
+    padding-left: 20px;
+}
+.cpxq-text-list{
+    padding:28px 0 28px 20px ;
+}
+.cpxq-text-list p{
+    font-size: 14px;
+    line-height: 28px;
+    color: #474f55;
+    font-family: '宋体';
+}
+.cpxq-red{
+    padding-left: 20px;
+}
+.cpxq-red p{
+    font-size: 18px;
+    line-height: 32px;
+    color: #bf2f2e;
+    font-family: '微软雅黑';
+}
+.cf-btn{
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #9f2522;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    padding: 0;
+    border-radius: 0;
+    margin-top: 25px;
+}
+.cf-btn:hover,.cf-btn:focus{
+    color: #fff;
+}
+/*swiper缩略图轮播*/
+.gallery-thumbs {
+    padding:1% 0;
+    width:90%;
+    margin-left:5% !important;
+}
+.gallery-thumbs .swiper-slide img{
+    width:100%;
+    border: 1px solid #cccccc;
+}
+.gallery-thumbs .swiper-slide-active img{
+
+}
+.gallery-thumbs .swiper-slide-active {
+    opacity: 1;
+}
+.swiper-button-next, .swiper-button-prev{
+    width:15px !important;
+}
+/**/
+.row{
+    margin: 0;
+}
+.pro-n{
+    padding: 20px 15px;
+}
+.pro-n div{
+    margin-bottom: 15px;
+}
+.pro-n h2{
+    font-size: 18px;
+    line-height: 32px;
+    color: #393838;
+    margin-bottom: 10px;
+}
+.pro-n p{
+    font-size: 14px;
+    line-height: 28px;
+    color: #474f55;
+    font-family: '宋体';
+}
+.pro-n img{
+    max-width: 100%;
+    display: block;
+    margin: 15px auto;
+}
+
+@media screen and (min-width: 1024px){
+    .pro-con ul li a:hover .im{
+        border: 1px solid #bf2f2e;
+    }
+    .pro-con ul li a:hover p{
+        color: #bf2f2e;
+    }
+    .zs-con ul li a:hover{
+        border: 1px solid #bf2f2e;
+    }
+    .zs-con ul li a:hover p{
+        color: #bf2f2e;
+    }
+}
+@media screen and (max-width: 1024px){
+    .pro-con ul li{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 768px){
+    .pro-con ul li ,.zs-con ul li{
+        padding: 8px 5px;
+    }
+    .zs-con ul li p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 480px){
+    .swiper-pagination{
+        bottom:40px;
+        right:40px;
+        background: rgba(0,0,0,.5);
+        color:#fff;
+        border-radius: 10px;
+        padding:2px 10px;
+        left: auto;
+    }
+    .gallery-thumbs {
+        width:100%;
+        padding:0;
+        margin-left: 0 !important;
+    }
+    .swiper-box,.cpxq-text{
+        padding: 0;
+    }
+    .cpxq-tit h3{
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+    .cpxq-text-list{
+        padding: 15px 0 15px 15px ;
+    }
+    .cpxq-red{
+        padding-left: 15px;
+    }
+    .pro-n p{
+        line-height: 24px;
+    }
+    .zs-con ul li{
+        width: 100%;
+    }
+    .zs-con ul li p{
+        height: auto;
+    }
+}
+@media screen and (max-width: 400px){
+    .pro-con ul li{
+        width: 100%;
+    }
+    .pro-con ul li p{
+        height: auto;
+    }
+}
+
+

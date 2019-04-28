@@ -1,0 +1,297 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'sir';
+    src: url('../fonts/SourceHanSansCN-Regular.otf');
+}
+a{
+    text-decoration: none !important;
+}
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+    .inner{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .inner{
+        width: 100%;
+    }
+
+}
+/*banner*/
+.ding{
+    position: relative;
+}
+.head{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    /*background-color:rgba(255,255,255,0.8);*/
+}
+#banner .im_mo{display: none;}
+#banner .im_pc{display: block;}
+#banner .swiper-container-horizontal>.swiper-pagination{
+    padding:0 3%;
+    bottom:5%;
+}
+#banner .swiper-pagination-clickable .swiper-pagination-bullet{
+    display: inline-block;
+    width: 15px;
+    height:15px;
+    margin-left: 8px;
+    background-color:#fff;
+    transition: transform .2s;
+    cursor: pointer;
+    opacity: 1;
+    border-radius: 50%;
+}
+#banner .swiper-pagination-bullets{
+    padding:0 30px;
+    bottom: 20px;
+}
+#banner .swiper-pagination-clickable .swiper-pagination-bullet-active{
+    background-color:#bf2f2e;
+}
+#banner .swiper-button-prev,#banner .swiper-button-next{
+    width: 22px;
+    height: 43px;
+    top: 50%;
+    position: absolute;
+    margin-top: -21px;
+}
+
+/*新闻公告*/
+.t-content{
+    width:70%;
+    margin:0 auto;
+    /*height:500px;*/
+    /*border:1px solid red;*/
+}
+.t-title{
+    margin:50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.t-title b{
+    width:100px;
+    height:15px;
+    border-bottom:1px solid #cccccc;
+}
+.t-title h1 a{
+    text-decoration: none;
+    margin:auto 20px;
+    text-align: center;
+    font-family:Helvetica;
+    font-size:28px;
+    color:#098eff;
+    letter-spacing:1.15px;
+}
+.t-title h1 span{
+    font-family:STHeitiTC-Light;
+    font-size:14px;
+    color:#888888;
+    letter-spacing:0.58px;
+    text-align:center;
+}
+.news{
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+}
+.xinwen,.gonggao{
+    width:47%;
+    /*height:200px;*/
+    /*border:1px solid red;*/
+}
+.xinwen>div:first-child,.jzhy>div:first-child{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid #cccccc;
+}
+.xinwen>div:first-child p:first-child,.jzhy>div:first-child p:first-child{
+    font-family:Helvetica;
+    font-size:18px;
+    color:#444444;
+    letter-spacing:0.74px;
+    text-align:left;
+    border-bottom:2px solid #098eff;
+;
+}
+.xinwen>div:first-child p i,.jzhy>div:first-child p i{
+    font-size: 20px;
+    color:#5ab3ff;
+    margin-right:10px;
+}
+.xinwen>div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    margin:15px auto;
+    padding:5px;
+}
+.xinwen>div:nth-child(2)>div{
+    width:48%;
+}
+.xwnr h2{
+    font-family:PingFangSC-Regular;
+    font-size:16px;
+    color:#444444;
+    letter-spacing:0.66px;
+    line-height:24px;
+    text-align:left;
+    margin-bottom: 10px;
+}
+.xwnr p{
+    font-family:PingFangSC-Regular;
+    font-size:14px;
+    color:#666666;
+    letter-spacing:0.58px;
+    line-height:24px;
+    text-align:left;
+    height:96px;
+    overflow: hidden;
+}
+.tp{overflow: hidden;}
+.tp img{ transition: all linear 0.3s;}
+.tp img:hover{
+    transition: all linear 0.3s;
+    transform: scale(1.1);
+}
+.news-xw ul{
+    /*border:1px solid;*/
+    padding:20px;
+}
+.news-xw ul li{
+    margin-bottom: 10px;
+}
+.news-xw ul li a{
+    display: flex;
+    justify-content: space-between;
+    font-family:PingFangSC-Regular;
+    font-size:14px;
+    color:#444444;
+    letter-spacing:0.58px;
+    line-height:22px;
+    /*text-align:left;*/
+}
+
+.news-xw ul li a p:first-child{
+    width:80%;
+    overflow: hidden;
+}
+.news-xw ul li a p:last-child{
+    width:17%;
+    text-align: right;
+}
+/*合作单位*/
+.hzdw{
+    background-color: #f6f8fa;
+    padding:20px 0 80px 0;
+}
+.hzdw .dw ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.hzdw .dw ul li{
+    position: relative;
+    width:18%;
+}
+.hzdw .dw ul li a img{
+    width:100%;
+}
+.hzdw .dw ul li .yd{
+    position: absolute;
+    background-color: rgba(65,68,70,.3);
+    font-family:PingFangSC-Regular;
+    font-size:14px;
+    color:#ffffff;
+    letter-spacing:0.58px;
+    text-align:center;
+    bottom:0;
+    width:100%;
+}
+.hzdw .dw ul li:hover .yd{
+    /*vertical-align: middle;*/
+    height:100%;
+}
+.hzdw .dw ul li .yd span{
+    display: block;
+    width:100%;
+    /*border:1px solid red;*/
+}
+.hzdw .dw ul li:hover .yd span{
+    position: absolute;
+    top:45%;
+    text-align: center;
+}
+@media screen and (min-width: 1600px){
+    .t-content {
+        width:60%;
+    }
+}
+@media screen and (max-width: 1600px){
+    .t-content {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1400px){
+    .t-content {
+        width: 92%;
+    }
+}
+@media screen and (max-width: 1200px){
+
+}
+@media screen and (max-width: 1024px) {
+    #banner .swiper-pagination-clickable .swiper-pagination-bullet{
+        width: 10px;
+        height: 10px;
+    }
+    #banner .swiper-pagination-bullets{
+        bottom: 10px;
+    }
+    .news-xw ul li a p:first-child {
+        height: 22px;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 768px){
+    #banner .im_mo{display: block; height:150px;}
+    #banner .im_pc{display: none;}
+    .t-title {
+        margin: 10px;
+    }
+    .xinwen, .gonggao {
+        width: 100%;
+    }
+    .news {
+        /*width: 100%;*/
+        display: block;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+    }
+    .xwnr h2 {
+        font-weight: bold;
+    }
+    .news-xw ul li a p:last-child {
+        width: 20%;
+    }
+    .news-xw ul li a p:first-child {
+        width: 75%;
+    }
+    .hzdw {
+        padding: 15px 0 30px 0;
+    }
+    .hzdw .dw ul li:nth-child(3),.hzdw .dw ul li:nth-child(4),.hzdw .dw ul li:nth-child(5){
+        display: none;
+    }
+    .hzdw .dw ul li {
+        width: 49%;
+    }
+}

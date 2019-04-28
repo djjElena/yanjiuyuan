@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="gb2312">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=dege"/>
+    <meta name="format-detection" content="telephone=no" />
+    <title>研究院简介</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/headfoot.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/second.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--头部部分-->
+<!--页尾-->
+<div class="ding">
+    <div class="head">
+        <script>$(".head").load("head.html");</script>
+    </div>
+    <!--banner-->
+    <div class="beijing">
+        <div>
+            <img src="images/index/beijing.png" alt=""/>
+        </div>
+        <div>
+            <img src="images/index/yjyjj.png" alt=""/>
+            <div class="lanxian"></div>
+        </div>
+        <div class="title">
+            <span>研究院简介&nbsp;>&nbsp;</span><u><a href="#">研究院介绍</a></u>
+        </div>
+    </div>
+
+</div>
+
+<!-- 二级页面左边 -->
+<div class="huise">
+    <div class="main-md">
+        <div class="padd50">
+            <div class="fu_cont">
+                <!-- 二级页面左边-->
+                <div class="fu_lf wow bounceInLeft">
+                    <div class="fu_lf_cont">
+                        <ul>
+                            <li><a href="#"> 院长致辞 </a></li>
+                            <li class="active"><a href="#"> 研究院介绍 </a></li>
+                            <li><a href="#"> 学术委员会 </a></li>
+                            <li><a href="#"> 组织架构 </a></li>
+                            <li><a href="#"> 理事会 </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 二级页面右边-->
+                <div class="fu_rt wow  bounceInRight">
+                    <!-- 右边的内容-->
+                    <div class="news-cont">
+                        <p class="fanhui"><a href="#"><i class="iconfont icon-jiantouarrowhead7"></i>返回</a></p>
+                        <div class="company">
+                            <h1>研究院使命</h1>
+                            <h2>发表人：李强   发布时间：2018/10/03</h2>
+                        </div>
+                        <p class="nr" style="text-indent: 2em">
+                            近几年，随着物联网、移动互联网的快速发展， 智能终端及智能永健行业迎来爆发期。据易观国际的研究数据显示，中国智能
+                            硬件市场规模在2016年已达到3315亿元人民币，预计2017年将达到3999亿元，同比增长20.63%。智能终端及智能硬件市场总体
+                            保持稳定的增长态势，预计到2019年，中国智能硬件市场规模将达到5411.9亿元。
+                        </p>
+                        <p class="image">
+                            <img src="images/index/yjy.png" alt=""/>
+                        </p>
+                        <p class="nr" style="text-indent: 2em">
+                            智能硬件在国内外得到了迅速的发展，尤其是以小米为代表的企业，利用手机为切入点，在智能穿戴、智能家居领域取得了突
+                            飞猛进的发展。如果说在智能硬件领域，小米是当之无愧的领头羊，那么在商业智能硬件领域，那只领头羊就非坤腾畅联莫属了。
+                        </p>
+                    </div>
+                </div>
+                <div class="both"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--页尾-->
+<div class="foots">
+    <script>$(".foots").load("foot.html");</script>
+</div>
+<script>
+    $(function(){
+        var banner = new Swiper('#banner', {
+            /*autoplay: 5000,*/
+            simulateTouch : true,
+            speed:1000,
+            //effect : "fade",
+            fade: {
+                crossFade: true
+            },
+            loop: true,
+            lazyLoading: true,
+//            pagination: '.swiper-pagination',
+//            prevButton:'.swiper-button-prev',
+//            nextButton:'.swiper-button-next',
+            paginationClickable: true
+        });
+        /**/
+        /*首页浮动效果函数*/
+        function fdxg(div,offset,time){
+            var oTop, sTop, dHeight, wHeight;
+            oTop = $(div).offset().top;//元素相对于窗口的距离
+            sTop = $(window).scrollTop(); //监控窗口已滚动的距离;
+            dHeight = $(document).height();//整个文档的高度
+            wHeight = $(window).height();//浏览器窗口的高度
+            if (wHeight + sTop > oTop + offset) {
+                setTimeout(function(){
+                    $(div).animate({ marginTop: 0 }, 1000);
+                },time)
+            }
+        }
+        $(window).on("scroll",function(){
+            fdxg('.yf h1',100,0);
+            fdxg('.pro h1',100,0);
+            fdxg('.ys h1',100,0);
+            fdxg('.jm h1',100,0);
+            fdxg('.al h1',100,0);
+            fdxg('.mc h1',100,0);
+            fdxg('.cn_in',100,0);
+            fdxg('.cn_txt',100,0);
+            fdxg('.pro .pro-con',100,0);
+            fdxg('.mc .pro-con',100,0);
+            fdxg('.pro .pro-bg',100,0);
+            fdxg('.mc .pro-bg',100,0);
+            fdxg('.ys-im',100,0);
+            fdxg('.ys-txt',100,0);
+            fdxg('.jm-txt',100,0);
+            fdxg('.zc-tit',100,0);
+            fdxg('.zc-ls ul li',100,0);
+            fdxg('.zc-bot',100,0);
+            fdxg('.sd-tit',100,0);
+            fdxg('.sd-ls',100,0);
+            fdxg('.al-con',100,0);
+            fdxg('#b-al',100,0);
+        });
+    });
+
+</script>
+</body>
+</html>

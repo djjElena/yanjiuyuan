@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="gb2312">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=dege"/>
+    <meta name="format-detection" content="telephone=no" />
+    <title>研究院团队</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/headfoot.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/second.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--头部部分-->
+<!--页尾-->
+<div class="ding">
+    <div class="head">
+        <script>$(".head").load("head.html");</script>
+    </div>
+    <!--banner-->
+    <div class="beijing">
+        <div>
+            <img src="images/index/beijing.png" alt=""/>
+        </div>
+        <div>
+            <img src="images/index/yjytd.png" alt=""/>
+            <div class="lanxian"></div>
+        </div>
+        <div class="title">
+            <span>研究院团队&nbsp;>&nbsp;</span><u><a href="#">专职研究员</a></u>
+        </div>
+    </div>
+
+</div>
+
+<!-- 二级页面左边 -->
+<div class="huise">
+    <div class="main-md">
+        <div class="padd50">
+            <div class="fu_cont">
+                <!-- 二级页面左边-->
+                <div class="fu_lf wow bounceInLeft">
+                    <div class="fu_lf_cont">
+                        <ul>
+                            <li class="active"><a href="#"> 专职研究员 </a></li>
+                            <li><a href="#"> 兼职研究员 </a></li>
+                            <li><a href="#"> 签约研究员 </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 二级页面右边-->
+                <div class="fu_rt wow  bounceInRight jieshao baogao yanjiu">
+                    <h1>专职研究员</h1>
+                    <div>
+                        <a href="#">
+                            <div class="yanjiuyuan">
+                                <div><img src="images/index/yanjiuyuan.png" alt=""/></div>
+                                <div>
+                                    <h2>李内进</h2>
+                                    <h3>专职研究员</h3>
+                                    <p>中国公共财政研究院 博士后 / 北京大学 博士</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="yanjiuyuan">
+                                <div><img src="images/index/yanjiuyuan.png" alt=""/></div>
+                                <div>
+                                    <h2>李内进</h2>
+                                    <h3>专职研究员</h3>
+                                    <p>中国公共财政研究院 博士后 / 北京大学 博士</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="yanjiuyuan">
+                                <div><img src="images/index/yanjiuyuan.png" alt=""/></div>
+                                <div>
+                                    <h2>李内进</h2>
+                                    <h3>专职研究员</h3>
+                                    <p>中国公共财政研究院 博士后 / 北京大学 博士</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div style="border-bottom: 0">
+                        <a href="#">
+                            <div class="yanjiuyuan">
+                                <div><img src="images/index/yanjiuyuan.png" alt=""/></div>
+                                <div>
+                                    <h2>李内进</h2>
+                                    <h3>专职研究员</h3>
+                                    <p>中国公共财政研究院 博士后 / 北京大学 博士</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="yanjiuyuan">
+                                <div><img src="images/index/yanjiuyuan.png" alt=""/></div>
+                                <div>
+                                    <h2>李内进</h2>
+                                    <h3>专职研究员</h3>
+                                    <p>中国公共财政研究院 博士后 / 北京大学 博士</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="yanjiuyuan">
+                                <div><img src="images/index/yanjiuyuan.png" alt=""/></div>
+                                <div>
+                                    <h2>李内进</h2>
+                                    <h3>专职研究员</h3>
+                                    <p>中国公共财政研究院 博士后 / 北京大学 博士</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="both"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--页尾-->
+<div class="foots">
+    <script>$(".foots").load("foot.html");</script>
+</div>
+<script>
+    $(function(){
+        var banner = new Swiper('#banner', {
+            /*autoplay: 5000,*/
+            simulateTouch : true,
+            speed:1000,
+            //effect : "fade",
+            fade: {
+                crossFade: true
+            },
+            loop: true,
+            lazyLoading: true,
+//            pagination: '.swiper-pagination',
+//            prevButton:'.swiper-button-prev',
+//            nextButton:'.swiper-button-next',
+            paginationClickable: true
+        });
+        /**/
+        /*首页浮动效果函数*/
+        function fdxg(div,offset,time){
+            var oTop, sTop, dHeight, wHeight;
+            oTop = $(div).offset().top;//元素相对于窗口的距离
+            sTop = $(window).scrollTop(); //监控窗口已滚动的距离;
+            dHeight = $(document).height();//整个文档的高度
+            wHeight = $(window).height();//浏览器窗口的高度
+            if (wHeight + sTop > oTop + offset) {
+                setTimeout(function(){
+                    $(div).animate({ marginTop: 0 }, 1000);
+                },time)
+            }
+        }
+        $(window).on("scroll",function(){
+            fdxg('.yf h1',100,0);
+            fdxg('.pro h1',100,0);
+            fdxg('.ys h1',100,0);
+            fdxg('.jm h1',100,0);
+            fdxg('.al h1',100,0);
+            fdxg('.mc h1',100,0);
+            fdxg('.cn_in',100,0);
+            fdxg('.cn_txt',100,0);
+            fdxg('.pro .pro-con',100,0);
+            fdxg('.mc .pro-con',100,0);
+            fdxg('.pro .pro-bg',100,0);
+            fdxg('.mc .pro-bg',100,0);
+            fdxg('.ys-im',100,0);
+            fdxg('.ys-txt',100,0);
+            fdxg('.jm-txt',100,0);
+            fdxg('.zc-tit',100,0);
+            fdxg('.zc-ls ul li',100,0);
+            fdxg('.zc-bot',100,0);
+            fdxg('.sd-tit',100,0);
+            fdxg('.sd-ls',100,0);
+            fdxg('.al-con',100,0);
+            fdxg('#b-al',100,0);
+        });
+    });
+
+</script>
+</body>
+</html>
